@@ -27,8 +27,8 @@ jobs:
       - run:
           name: Build Debug
           command:  ./gradlew clean assembleDebug
-           - chmod +x ./gradlew
-           - ./gradlew clean assembleDebug
+           
+           
       - store_artifacts: 
           path: /app/build/outputs/apk/debug/*.apk
           destination: /apk-debug   
