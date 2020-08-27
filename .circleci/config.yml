@@ -33,7 +33,7 @@ jobs:
           name: Build Release
           command: |
            - chmod +x ./gradlew
-           - ./gradlew clean assembleDebug
+           - ./gradlew clean assembleRelease
       - store_artifacts: 
           path: /app/build/outputs/apk/debug/*.apk
           destination: /apk-debug             
