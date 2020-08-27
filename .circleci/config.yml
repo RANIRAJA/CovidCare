@@ -22,7 +22,7 @@ jobs:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
-          name: Build Debug
+          name: chmod permission
           command:  chmod +x ./gradlew   
       - run:
           name: Build Debug
