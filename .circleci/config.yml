@@ -43,6 +43,6 @@ jobs:
        - aws-s3/sync:
            from: /apk-release
            to: 's3://my-s3-bucket-name/prefix'
-           
            overwrite: true # default is false
+           
                   
