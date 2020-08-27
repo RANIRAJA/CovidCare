@@ -38,7 +38,7 @@ jobs:
           name: Build Release
           command:  ./gradlew clean assembleRelease
            
-           - ./gradlew clean assembleRelease
+      
       - store_artifacts: 
           path: /app/build/outputs/apk/release/*.apk
           destination: /apk-release 
