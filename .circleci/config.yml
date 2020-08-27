@@ -14,5 +14,4 @@ jobs:
       - run:
           name: Chmod permissions
           command: chmod +x ./gradlew   
-      - run:
-          name:      
+          
