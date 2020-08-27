@@ -30,7 +30,7 @@ jobs:
           path: /app/build/outputs/apk/debug/*.apk
           destination: /apk-debug   
       - run:
-          name: Build Debug
+          name: Build Release
           command: |
            - chmod +x ./gradlew
            - ./gradlew clean assembleDebug
