@@ -29,4 +29,11 @@ jobs:
       - store_artifacts: 
           path: /app/build/outputs/apk/debug/*.apk
           destination: /apk-debug   
-             
+      - run:
+          name:  Debug
+          command: |
+           - chmod +x ./gradlew
+           - ./gradlew clean assembleDebug
+      - store_artifacts: 
+          path: /app/build/outputs/apk/debug/*.apk
+          destination: /apk-debug             
