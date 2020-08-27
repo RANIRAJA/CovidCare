@@ -28,4 +28,5 @@ jobs:
            - ./gradlew clean assembleDebug
       - store_artifacts: 
           path: /app/build/outputs/apk/debug/*.apk
-          destination: /apk-debug      
+          destination: /apk-debug   
+             
