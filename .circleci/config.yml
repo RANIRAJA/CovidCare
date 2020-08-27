@@ -39,7 +39,7 @@ jobs:
           destination: /apk-release 
     deploy:
       steps:
-       - checkout
+       - name:  
        - aws-s3/sync:
            from: /apk-release
            to: 's3://my-s3-bucket-name/prefix'
