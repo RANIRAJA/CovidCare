@@ -38,4 +38,13 @@ jobs:
           path: /app/build/outputs/apk/release/*.apk
           destination: /apk-release 
   deploy:
-                      
+    steps:
+       - checkout
+       - aws-s3/sync:
+           from: /apk-release
+           to: 's3://my-s3-bucket-name/prefix'
+           arguments: | # Optional arguments
+             --acl public-read \
+             --cache-control "max-age=86400"
+           overwrite: true # default is false
+                  
