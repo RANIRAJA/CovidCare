@@ -33,7 +33,6 @@ jobs:
       - run:
           name: chmod permission
           command:  chmod +x ./gradlew      
-
       - run:
           name: Build Release
           command:  ./gradlew clean assembleRelease
