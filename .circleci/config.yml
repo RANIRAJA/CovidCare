@@ -25,4 +25,7 @@ jobs:
           name: Build Debug
           command: |
            - chmod +x ./gradlew
-           - ./gradlew clean assembleDebug           
+           - ./gradlew clean assembleDebug
+      - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
+          path: app/build/reports
+          destination: reports                
