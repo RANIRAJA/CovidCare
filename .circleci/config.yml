@@ -12,4 +12,4 @@ jobs:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
           name: Chmod permissions
-          command: chmod +x   
+          command: chmod +x ./gradlew   
