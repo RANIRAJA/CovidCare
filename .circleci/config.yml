@@ -46,7 +46,6 @@ jobs:
            from: /apk-release
            to: 's3://artifactprojects3/' 
            overwrite: true # default is false
-
 workflows: # Define a Workflow running the build job, then the deploy job
    version: 2
    build-deploy: # Make a workflow to build and deploy your project
