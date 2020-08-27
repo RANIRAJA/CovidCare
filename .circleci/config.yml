@@ -1,4 +1,4 @@
 version:  2
 jobs:
-    builds:
+  build:
       working_directory:  /app
