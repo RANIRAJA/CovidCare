@@ -23,9 +23,6 @@ jobs:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
           name: Build Debug
-          command: |    
-      - run:
-          name: Build Debug
           command: |
            - chmod +x ./gradlew
            - ./gradlew clean assembleDebug
