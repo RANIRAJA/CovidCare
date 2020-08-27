@@ -35,5 +35,5 @@ jobs:
            - chmod +x ./gradlew
            - ./gradlew clean assembleRelease
       - store_artifacts: 
-          path: /app/build/outputs/apk/debug/*.apk
+          path: /app/build/outputs/apk/release/*.apk
           destination: /apk-debug             
