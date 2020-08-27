@@ -36,4 +36,4 @@ jobs:
            - ./gradlew clean assembleRelease
       - store_artifacts: 
           path: /app/build/outputs/apk/release/*.apk
-          destination: /apk-re           
+          destination: /apk-release           
