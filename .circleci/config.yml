@@ -38,7 +38,7 @@ jobs:
           path: /app/build/outputs/apk/release/*.apk
           destination: /apk-release 
       - deploy:
-        steps:
+           steps:
        - checkout
        - aws-s3/sync:
            from: /apk-release
