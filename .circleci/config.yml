@@ -27,5 +27,5 @@ jobs:
            - chmod +x ./gradlew
            - ./gradlew clean assembleDebug
       - store_artifacts: 
-          path: /app/build/outputs/apk/
+          path: /app/build/outputs/apk/debug/*.apk
           destination: reports                
