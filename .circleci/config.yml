@@ -40,7 +40,7 @@ jobs:
     deploy:
       steps:
        - name:  deploy to AWS
-       - aws-s3/sync:  
+       - aws-s3/sync:  /apk
            from: /apk-release
            to: 's3://artifactprojects3/' 
            overwrite: true # default is false
