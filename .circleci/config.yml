@@ -42,7 +42,7 @@ jobs:
        - name:  deploy to AWS
        - aws-s3/sync:
            from: /apk-release
-           to: 's3://my-s3-bucket-name/prefix'
+           to: 's3://my-s3-bucket-name/prefix' arn:aws:s3:::artifactprojects3
            overwrite: true # default is false
            
                   
