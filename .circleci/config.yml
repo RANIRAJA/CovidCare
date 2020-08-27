@@ -1,4 +1,5 @@
 version: 2
+sudo:  required
 jobs:
   build:
     working_directory: ~/app
