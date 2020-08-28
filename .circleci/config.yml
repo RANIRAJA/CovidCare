@@ -20,6 +20,9 @@ jobs:
       - restore_cache:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
+          name: Setup environment
+          command: scripts/ci-setup.sh    
+      - run:
           name: Chmod permissions
           command: chmod +x ./gradlew   
       - run:
