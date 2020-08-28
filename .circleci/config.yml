@@ -40,7 +40,7 @@ jobs:
           command:  yes | sdkmanager --licenses  
       - run:
           name: Licences accept
-          command:  yes | sdkmanager --    
+          command:  yes | sdkmanager --update    
       - run:
           name: chmod permission
           command:  chmod +x ./gradlew      
