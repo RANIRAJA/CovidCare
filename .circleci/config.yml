@@ -40,7 +40,7 @@ jobs:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
           name: chmod permission
-          command:  chmod +x ./gradlew  
+          command:  yes | sdkmanager --licenses  
       - run:
           name: chmod permission
           command:  chmod +x ./gradlew      
