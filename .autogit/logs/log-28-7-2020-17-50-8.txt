@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Fri Aug 28 2020 17:50:08 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* scripts/ci-setup.sh
+
+
+Created files:
+* .autogit/logs/log-28-7-2020-17-49-57.txt
+
+
+Deleted files:
+
+
+Renamed files:
