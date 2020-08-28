@@ -2,12 +2,15 @@ version: 2
 sudo:  required
 dependencies:
   pre:
-    - echo y | android update sdk --no-ui --all --filter tools
-    - echo y | android update sdk --no-ui --all --filter extra-android-m2repository
-    - echo y | android update sdk --no-ui --all --filter extra-android-support
-    - echo y | android update sdk --no-ui --all --filter extra-google-m2repository
-    - echo y | android update sdk --no-ui --all --filter build-tools-30.0.0
-    - echo y | android update sdk --no-ui --all --filter android-29
+    # Android SDK Build-tools, revision 25.0.2
+    - if [ ! -d "/usr/local/android-sdk-linux/build-tools/25.0.2" ]; then echo y | android update sdk --no-ui --all --filter "build-tools-25.0.2"; fi
+    - echo y | android update sdk --no-ui --all --filter "extra-google-m2repository"
+  cache_directories:
+    - ~/.gradle
+    - /usr/local/android-sdk-linux/platforms/android-25
+    - /usr/local/android-sdk-linux/build-tools/25.0.2
+    - /usr/local/android-sdk-linux/tools
+    - /usr/local/android-sdk-linux/extras/android/m2repository
 jobs:
   build:
     working_directory: ~/app
