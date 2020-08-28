@@ -2,7 +2,7 @@
 
 # Accept licenses
 ${ANDROID_HOME}/tools/bin/sdkmanager --licenses
-yes | sdkmanager  sdkmanager
+yes | sdkmanager --licenses && sdkmanager
 
 # Install dependencies
 ./gradlew androidDependencies || true
