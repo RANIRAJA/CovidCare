@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Fri Aug 28 2020 16:30:11 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* .circleci/config.yml
+
+
+Created files:
+* .autogit/logs/log-28-7-2020-16-29-57.txt
+
+
+Deleted files:
+
+
+Renamed files:
