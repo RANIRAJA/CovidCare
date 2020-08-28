@@ -1,7 +1,5 @@
 version: 2
 sudo:  required
-environment:
-  ANDROID_HOME:  /tools/bin/sdkmanager --licenses
 dependencies:
   pre:
     - echo y | android update sdk --no-ui --all --filter tools
